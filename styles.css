@@ -1,0 +1,84 @@
+body {
+     background: #E1DCC9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main-section {
+    padding: 60px 0;
+    color: white;
+   ;   
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.section-subtitle {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    opacity: 0.9;
+}
+
+
+.card {
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: white;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15) !important;
+}
+
+.card-title {
+    color: #667eea;
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.card-text {
+    color: #555;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link {
+    font-size: 1.1rem;
+    color: #333 !important;
+    transition: color 0.3s ease;
+}
+
+body{ font-family: sans-serif; width: 450px; margin: auto;}
+
+#galeria{ width: 400px;}
+
+nav ul{ list-style:none; padding-left: 0; 
+ display:flex;
+}
+
+nav ul li a img{
+ width: 100px;
+ opacity:50%;
+ transition:0.3s;
+ filter:grayscale(50%);
+
+ 
+ &:hover{ opacity:100%;  margin-top:-10px;  filter:grayscale(0%);
+  box-shadow: 0 4px 8px rgba(0,0,0,.3)
+}
+ &:active{transform:scale(0.8)}
+ 
+}
