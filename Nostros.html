@@ -68,10 +68,31 @@
             </div>
         </div>
     </main>
-
+<div class="container mt-5">
+    <div class="d-flex justify-content-center gap-3">
+    <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="vision" title="visión">
+        ver tooltip vision
+    </button>
+    <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="mision"
+        title="Misión">
+        ver tooltip mision
+    </button>
+    <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="valores"
+        title="Valores">
+        ver tooltip valores
+    </button>
+   
+    </div>
+</div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
-</body>
 
+        <script>
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-toggle="tooltip"]'))
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                return new bootstrap.Tooltip(tooltipTriggerEl)
+            })
+        </script>
+</body>
 </html>
